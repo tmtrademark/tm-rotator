@@ -1,0 +1,14 @@
+{
+  "name": "tm-rotator",
+  "version": "0.0.1",
+  "nodecgDependency": "~0.6.0",
+  "homepage": "http://ybot.me",
+  "authors": [
+    "Toby McKes <toby.mckes@gmail.com>"
+  ],
+  "description": "Logo Rotator for OldVulpine",
+  "license": "MIT",
+  "extension": {
+    "path": "extension/extension.js"
+  }
+}

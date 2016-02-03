@@ -1,0 +1,20 @@
+{
+	"name": "tm-rotator",
+	"version": "0.0.1",
+	"homepage": "http://ybot.me",
+	"authors": [
+		"Toby McKes <toby.mckes@gmail.com>"
+	],
+	"description": "Donation / Sub / Goal tracker",
+	"license": "MIT",
+	"nodecg": {
+		"compatibleRange": "~0.7.0",
+		"graphics" : [
+			{
+					"file" : "index.html",
+					"width" : 400,
+					"height" : 100
+			}
+		]
+	}
+}

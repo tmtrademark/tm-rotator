@@ -1,0 +1,17 @@
+{
+	"name": "tm-tracker",
+	"dependencies": {
+		"jquery": "^2.1.3",
+		"gsap": "^1.16.0",
+		"easeljs": "~0.8.1",
+		"SoundJS": "0.6.1",
+		"paper-button": "PolymerElements/paper-button#^1.0.8",
+		"paper-styles": "PolymerElements/paper-styles#^1.0.8",
+		"paper-radio-group" : "PolymerElements/paper-radio-group",
+		"paper-radio-button" : "PolymerElements/paper-radio-button",
+		"paper-input" : "PolymerElements/paper-input",
+		"nodecg-replicant-input" : "NodeCGElements/nodecg-replicant-input",
+		"paper-toggle-button" : "PolymerElements/paper-toggle-button",
+		"paper-progress" : "PolymerElements/paper-progress"
+	}
+}

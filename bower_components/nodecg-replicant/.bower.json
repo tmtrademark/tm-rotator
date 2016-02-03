@@ -1,0 +1,40 @@
+{
+  "name": "nodecg-replicant",
+  "homepage": "https://github.com/NodeCGElements/nodecg-replicant",
+  "authors": [
+    "Alex Van Camp <email@alexvan.camp>"
+  ],
+  "description": "A declarative implementation of NodeCG Replicants.",
+  "main": "nodecg-replicant.html",
+  "moduleType": [],
+  "keywords": [
+    "nodecg",
+    "dashboard",
+    "panel",
+    "element",
+    "polymer",
+    "component"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "^1.1.5",
+    "iron-component-page": "PolymerElements/iron-component-page#~1.0.8"
+  },
+  "version": "0.5.3",
+  "_release": "0.5.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.5.3",
+    "commit": "a52bfc6bf6cc154816f74d845d9bdc12ba98ed6a"
+  },
+  "_source": "git://github.com/NodeCGElements/nodecg-replicant.git",
+  "_target": "~0.5.2",
+  "_originalSource": "NodeCGElements/nodecg-replicant"
+}
