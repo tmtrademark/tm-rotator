@@ -6,7 +6,7 @@
 	var $slot3 = $('#slot3');
 	var $slot4 = $('#slot4');
 	
-	var master_delay = 30000;
+	var master_delay = 3000;
 
 	var $ads = $('.ad');
 	
