@@ -10,39 +10,15 @@
 
 	var $ads = $('.ad');
 	
-	var chain = function(toAnimate, ix){
-		console.log("Chain triggered " + ix);
-		if(toAnimate[ix]){
-			if( ix == 0 ) {
-				$(toAnimate[ix]).delay(master_delay*4).animate({opacity: 0}, 500, function(){
-					chain(toAnimate, ix + 1 );
-				});
-			} else {
-				$(toAnimate[ix]).fadeIn(500, function(){
-					if( ix == (toAnimate.length - 1) ) {
-						$(toAnimate[ix]).delay(master_delay).fadeOut(500, function(){
-							console.log("Trigger heart fade in");
-							$heart.animate({opacity: 0.5}, 500);
-						});
-					} else {
-						$(toAnimate[ix]).delay(master_delay).fadeOut(500, function(){
-							console.log("Trigger chain after delay");
-							chain(toAnimate, ix + 1 );
-						});
-					}
-				});
-			}
-		}
-	};	
-	var init_delay = 0;
-	function play() {
+	$("#video").bind("ended", function() {
+		$(this).fadeOut();
 		setTimeout(function(){
-			console.log("Play function triggered");
-			chain($ads, 0);
-			console.log("After Chain");
-			init_delay = (master_delay + 1000) * $ads.length + ( master_delay * 4 ) + 1000;
-			play();
-		}, init_delay );
-	}
-	play();
+			$("#video").fadeIn(500, function(){
+				var vid = document.getElementById("video"); 
+				vid.play();
+			});
+		}, 25000 );
+	});
+	
+	
 })();
