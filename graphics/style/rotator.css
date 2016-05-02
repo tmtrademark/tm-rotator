@@ -97,3 +97,6 @@ img {
 	margin-left: 20px;
 	-webkit-filter: drop-shadow(0 0 8px rgba(0,0,0,0.7));
 }
+#video {
+	display: none;
+}

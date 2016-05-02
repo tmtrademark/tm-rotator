@@ -10,12 +10,16 @@
 	var master_delay = delay_mins * 60 * 1000;
 
 	var $ads = $('.ad');
+	var vid = document.getElementById("video"); 
+
+	$("#video").delay(master_delay).fadeIn( 500, function(){
+		vid.play();
+	});
 	
 	$("#video").bind("ended", function() {
 		$(this).fadeOut();
 		setTimeout(function(){
 			$("#video").fadeIn(500, function(){
-				var vid = document.getElementById("video"); 
 				vid.play();
 			});
 		}, master_delay );
