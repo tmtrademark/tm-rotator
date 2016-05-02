@@ -6,7 +6,8 @@
 	var $slot3 = $('#slot3');
 	var $slot4 = $('#slot4');
 	
-	var master_delay = 25000;
+	var delay_mins = 7;
+	var master_delay = delay_mins * 60 * 1000;
 
 	var $ads = $('.ad');
 	
@@ -17,7 +18,7 @@
 				var vid = document.getElementById("video"); 
 				vid.play();
 			});
-		}, 25000 );
+		}, master_delay );
 	});
 	
 	
