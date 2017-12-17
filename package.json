@@ -1,19 +1,29 @@
 {
 	"name": "tm-rotator",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"homepage": "http://ybot.me",
-	"authors": [
-		"Toby McKes <toby.mckes@gmail.com>"
-	],
-	"description": "Donation / Sub / Goal tracker",
+	"author": "Toby McKes <toby.mckes@gmail.com>",
+	"description": "Image Rotator",
 	"license": "MIT",
 	"nodecg": {
-		"compatibleRange": "~0.7.0",
-		"graphics" : [
+		"compatibleRange": "~0.8.0",
+		"graphics": [
 			{
-					"file" : "index.html",
-					"width" : 400,
-					"height" : 100
+				"file": "index.html",
+				"width": 400,
+				"height": 100
+			}
+		],
+		"assetCategories": [
+			{
+				"name": "images",
+				"title": "Rotator Images",
+				"allowedTypes": [
+					"jpg",
+					"jpeg",
+					"png",
+					"gif"
+				]
 			}
 		]
 	}
