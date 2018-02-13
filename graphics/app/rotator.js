@@ -1,11 +1,11 @@
 (function () {
 	'use strict';
 	var images;
-	var delay_mins = 0.1;
+	var delay_mins = 5;
 	var master_delay = delay_mins * 60 * 1000;
 	var container = $('#slideshow');
 	var transition_speed = 2000;
-	var pause_time = 2000;
+	var pause_time = 12000;
 	nodecg.readReplicant('assets:images', 'tm-rotator', value => {
 		images = value;
 		images.forEach( function( el ) {
