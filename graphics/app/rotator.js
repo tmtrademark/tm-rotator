@@ -15,33 +15,47 @@
 	});
 
 	function do_the_thing() {
-		setTimeout( function(){
-			container.cycle({
-				fx: 'custom',
-				sync: 1,
-				cssBefore: {
-					left: '-1000px',
-					display: 'block'
-				},
-				animIn:  {
-					left: '0px'
-				},
-				animOut: {
-					left: '-1000px'
-				},
-				cleartypeNoBg: true,
-				speed: transition_speed,
-				delay: 500,
-				timeout: pause_time,
-				autostop: true,
-				nowrap: true,
-				end: function(options){rotation_end()}
+		if ( $('img.slide').length > 1 ) {
+			setTimeout( function(){
+					container.cycle({
+						fx: 'custom',
+						sync: 1,
+						cssBefore: {
+							left: '-1000px',
+							display: 'block'
+						},
+						animIn:  {
+							left: '0px'
+						},
+						animOut: {
+							left: '-1000px'
+						},
+						cleartypeNoBg: true,
+						speed: transition_speed,
+						delay: 500,
+						timeout: pause_time,
+						autostop: true,
+						nowrap: true,
+						end: function(options){rotation_end()}
+					});
+					container.animate({
+						left: '0px'
+					},'slow', function(){})
+				}, 1500);
+		} else {
+			container.animate({
+				left: '0px'
+			},'slow', function(){
+				setTimeout(function(){
+					rotation_end();
+				}, pause_time);
 			});
-			container.fadeIn('fast', function(){})
-		}, 1500);
+		}
 	}
 	function rotation_end() {
-		container.fadeOut('slow', function(){
+		container.animate({
+			left: '-850px'
+		},'slow', function(){
 			container.cycle('destroy');
 			console.log( "Rotation ended. Timing out for " + delay_mins + " minutes;")
 		});
