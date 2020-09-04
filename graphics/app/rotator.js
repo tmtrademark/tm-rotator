@@ -17,6 +17,18 @@
 	function do_the_thing() {
 		setTimeout( function(){
 			container.cycle({
+				fx: 'custom',
+				sync: 1,
+				cssBefore: {
+					left: '-1000px',
+					display: 'block'
+				},
+				animIn:  {
+					left: '0px'
+				},
+				animOut: {
+					left: '-1000px'
+				},
 				cleartypeNoBg: true,
 				speed: transition_speed,
 				delay: 500,
