@@ -5,7 +5,7 @@
 	var master_delay = delay_mins * 60 * 1000;
 	var container = $('#slideshow');
 	var transition_speed = 2000;
-	var pause_time = 12000;
+	var pause_time = 30000;
 	nodecg.readReplicant('assets:images', 'tm-rotator', value => {
 		images = value;
 		images.forEach( function( el ) {
@@ -40,12 +40,12 @@
 					});
 					container.animate({
 						left: '0px'
-					},'slow', function(){})
+					}, 1500, function(){})
 				}, 1500);
 		} else {
 			container.animate({
 				left: '0px'
-			},'slow', function(){
+			}, 1500, function(){
 				setTimeout(function(){
 					rotation_end();
 				}, pause_time);
@@ -55,7 +55,7 @@
 	function rotation_end() {
 		container.animate({
 			left: '-850px'
-		},'slow', function(){
+		}, 1500, function(){
 			container.cycle('destroy');
 			console.log( "Rotation ended. Timing out for " + delay_mins + " minutes;")
 		});
